@@ -1,0 +1,588 @@
+2018-05-11 18:22:59,395 - log/train.log - INFO - dropout_keep   :	0.5
+2018-05-11 18:22:59,396 - log/train.log - INFO - zeros          :	True
+2018-05-11 18:22:59,396 - log/train.log - INFO - num_chars      :	4403
+2018-05-11 18:22:59,396 - log/train.log - INFO - num_features   :	[14]
+2018-05-11 18:22:59,396 - log/train.log - INFO - lstm_dim       :	100
+2018-05-11 18:22:59,396 - log/train.log - INFO - num_segs       :	4
+2018-05-11 18:22:59,396 - log/train.log - INFO - max_epoch      :	100
+2018-05-11 18:22:59,396 - log/train.log - INFO - ckpt_path      :	ckpt
+2018-05-11 18:22:59,396 - log/train.log - INFO - lower          :	True
+2018-05-11 18:22:59,396 - log/train.log - INFO - result_path    :	result
+2018-05-11 18:22:59,396 - log/train.log - INFO - seg_dim        :	20
+2018-05-11 18:22:59,396 - log/train.log - INFO - tag_schema     :	iobes
+2018-05-11 18:22:59,396 - log/train.log - INFO - features       :	['1']
+2018-05-11 18:22:59,397 - log/train.log - INFO - feature_dim    :	['32']
+2018-05-11 18:22:59,397 - log/train.log - INFO - char_dim       :	100
+2018-05-11 18:22:59,397 - log/train.log - INFO - num_tags       :	13
+2018-05-11 18:22:59,397 - log/train.log - INFO - use_other_features:	False
+2018-05-11 18:22:59,397 - log/train.log - INFO - clip           :	5
+2018-05-11 18:22:59,397 - log/train.log - INFO - optimizer      :	adam
+2018-05-11 18:22:59,397 - log/train.log - INFO - batch_size     :	20
+2018-05-11 18:22:59,397 - log/train.log - INFO - pre_emb        :	True
+2018-05-11 18:22:59,397 - log/train.log - INFO - steps_check    :	100
+2018-05-11 18:22:59,397 - log/train.log - INFO - emb_file       :	resources/wiki_100.utf8
+2018-05-11 18:22:59,397 - log/train.log - INFO - lr             :	0.001
+2018-05-11 18:23:11,945 - log/train.log - INFO - Created model with fresh parameters.
+2018-05-11 18:23:14,311 - log/train.log - INFO - Load pre-trained embedding.
+2018-05-11 18:23:14,311 - log/train.log - INFO - start training
+2018-05-11 18:23:24,850 - log/train.log - INFO - epoch iteration: 1, step: 100/1044, NER loss: 38.404297
+2018-05-11 18:23:34,776 - log/train.log - INFO - epoch iteration: 1, step: 200/1044, NER loss: 16.076576
+2018-05-11 18:23:42,583 - log/train.log - INFO - epoch iteration: 1, step: 300/1044, NER loss: 10.710990
+2018-05-11 18:23:50,707 - log/train.log - INFO - epoch iteration: 1, step: 400/1044, NER loss:  8.829350
+2018-05-11 18:23:59,385 - log/train.log - INFO - epoch iteration: 1, step: 500/1044, NER loss:  7.576569
+2018-05-11 18:24:09,210 - log/train.log - INFO - epoch iteration: 1, step: 600/1044, NER loss:  8.516816
+2018-05-11 18:24:17,779 - log/train.log - INFO - epoch iteration: 1, step: 700/1044, NER loss:  6.533703
+2018-05-11 18:24:26,056 - log/train.log - INFO - epoch iteration: 1, step: 800/1044, NER loss:  5.568460
+2018-05-11 18:24:34,511 - log/train.log - INFO - epoch iteration: 1, step: 900/1044, NER loss:  6.058162
+2018-05-11 18:24:43,069 - log/train.log - INFO - epoch iteration: 1, step: 1000/1044, NER loss:  4.998499
+2018-05-11 18:24:46,664 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:24:52,800 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3616 phrases; correct: 2808.
+
+2018-05-11 18:24:52,801 - log/train.log - INFO - accuracy:  96.88%; precision:  77.65%; recall:  73.53%; F1:   0.76
+
+2018-05-11 18:24:52,801 - log/train.log - INFO -               LOC: precision:  80.79%; recall:  75.45%; F1:   0.78  1822
+
+2018-05-11 18:24:52,801 - log/train.log - INFO -               ORG: precision:  66.50%; recall:  66.97%; F1:   0.67  991
+
+2018-05-11 18:24:52,801 - log/train.log - INFO -               PER: precision:  84.31%; recall:  76.58%; F1:   0.80  803
+
+2018-05-11 18:24:52,902 - log/train.log - INFO - new best dev f1 score: 0.760
+2018-05-11 18:24:55,117 - log/train.log - INFO - model saved
+2018-05-11 18:24:55,117 - log/train.log - INFO - evaluate: test
+2018-05-11 18:25:06,767 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7427 phrases; correct: 5662.
+
+2018-05-11 18:25:06,767 - log/train.log - INFO - accuracy:  96.79%; precision:  76.24%; recall:  73.47%; F1:   0.75
+
+2018-05-11 18:25:06,767 - log/train.log - INFO -               LOC: precision:  78.21%; recall:  74.99%; F1:   0.77  3507
+
+2018-05-11 18:25:06,767 - log/train.log - INFO -               ORG: precision:  66.23%; recall:  66.86%; F1:   0.67  2206
+
+2018-05-11 18:25:06,767 - log/train.log - INFO -               PER: precision:  85.06%; recall:  78.22%; F1:   0.81  1714
+
+2018-05-11 18:25:06,853 - log/train.log - INFO - new best test f1 score: 0.750
+2018-05-11 18:25:11,312 - log/train.log - INFO - epoch iteration: 2, step: 56/1044, NER loss:  4.568079
+2018-05-11 18:25:20,231 - log/train.log - INFO - epoch iteration: 2, step: 156/1044, NER loss:  4.944870
+2018-05-11 18:25:28,454 - log/train.log - INFO - epoch iteration: 2, step: 256/1044, NER loss:  4.238631
+2018-05-11 18:25:37,558 - log/train.log - INFO - epoch iteration: 2, step: 356/1044, NER loss:  4.701639
+2018-05-11 18:25:45,389 - log/train.log - INFO - epoch iteration: 2, step: 456/1044, NER loss:  3.510172
+2018-05-11 18:25:53,515 - log/train.log - INFO - epoch iteration: 2, step: 556/1044, NER loss:  3.731853
+2018-05-11 18:26:02,198 - log/train.log - INFO - epoch iteration: 2, step: 656/1044, NER loss:  4.238955
+2018-05-11 18:26:09,565 - log/train.log - INFO - epoch iteration: 2, step: 756/1044, NER loss:  3.068852
+2018-05-11 18:26:17,037 - log/train.log - INFO - epoch iteration: 2, step: 856/1044, NER loss:  2.950391
+2018-05-11 18:26:26,557 - log/train.log - INFO - epoch iteration: 2, step: 956/1044, NER loss:  3.591986
+2018-05-11 18:26:35,379 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:26:41,447 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3671 phrases; correct: 3085.
+
+2018-05-11 18:26:41,447 - log/train.log - INFO - accuracy:  97.62%; precision:  84.04%; recall:  80.78%; F1:   0.82
+
+2018-05-11 18:26:41,447 - log/train.log - INFO -               LOC: precision:  87.05%; recall:  82.01%; F1:   0.84  1838
+
+2018-05-11 18:26:41,447 - log/train.log - INFO -               ORG: precision:  77.88%; recall:  74.09%; F1:   0.76  936
+
+2018-05-11 18:26:41,447 - log/train.log - INFO -               PER: precision:  84.28%; recall:  85.52%; F1:   0.85  897
+
+2018-05-11 18:26:41,510 - log/train.log - INFO - new best dev f1 score: 0.820
+2018-05-11 18:26:43,663 - log/train.log - INFO - model saved
+2018-05-11 18:26:43,664 - log/train.log - INFO - evaluate: test
+2018-05-11 18:26:54,869 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7484 phrases; correct: 6216.
+
+2018-05-11 18:26:54,869 - log/train.log - INFO - accuracy:  97.47%; precision:  83.06%; recall:  80.65%; F1:   0.82
+
+2018-05-11 18:26:54,869 - log/train.log - INFO -               LOC: precision:  86.75%; recall:  81.82%; F1:   0.84  3450
+
+2018-05-11 18:26:54,869 - log/train.log - INFO -               ORG: precision:  75.63%; recall:  73.59%; F1:   0.75  2126
+
+2018-05-11 18:26:54,869 - log/train.log - INFO -               PER: precision:  84.64%; recall:  86.64%; F1:   0.86  1908
+
+2018-05-11 18:26:54,934 - log/train.log - INFO - new best test f1 score: 0.820
+2018-05-11 18:26:55,985 - log/train.log - INFO - epoch iteration: 3, step: 12/1044, NER loss:  3.248148
+2018-05-11 18:27:03,835 - log/train.log - INFO - epoch iteration: 3, step: 112/1044, NER loss:  2.446533
+2018-05-11 18:27:12,829 - log/train.log - INFO - epoch iteration: 3, step: 212/1044, NER loss:  2.748179
+2018-05-11 18:27:22,347 - log/train.log - INFO - epoch iteration: 3, step: 312/1044, NER loss:  2.968485
+2018-05-11 18:27:31,637 - log/train.log - INFO - epoch iteration: 3, step: 412/1044, NER loss:  2.656315
+2018-05-11 18:27:40,719 - log/train.log - INFO - epoch iteration: 3, step: 512/1044, NER loss:  2.415467
+2018-05-11 18:27:48,122 - log/train.log - INFO - epoch iteration: 3, step: 612/1044, NER loss:  2.243639
+2018-05-11 18:27:56,309 - log/train.log - INFO - epoch iteration: 3, step: 712/1044, NER loss:  2.334754
+2018-05-11 18:28:05,000 - log/train.log - INFO - epoch iteration: 3, step: 812/1044, NER loss:  2.387660
+2018-05-11 18:28:13,554 - log/train.log - INFO - epoch iteration: 3, step: 912/1044, NER loss:  2.571725
+2018-05-11 18:28:23,834 - log/train.log - INFO - epoch iteration: 3, step: 1012/1044, NER loss:  2.464830
+2018-05-11 18:28:26,920 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:28:35,099 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3561 phrases; correct: 3153.
+
+2018-05-11 18:28:35,099 - log/train.log - INFO - accuracy:  97.98%; precision:  88.54%; recall:  82.56%; F1:   0.85
+
+2018-05-11 18:28:35,099 - log/train.log - INFO -               LOC: precision:  89.75%; recall:  84.83%; F1:   0.87  1844
+
+2018-05-11 18:28:35,099 - log/train.log - INFO -               ORG: precision:  83.50%; recall:  75.10%; F1:   0.79  885
+
+2018-05-11 18:28:35,099 - log/train.log - INFO -               PER: precision:  91.23%; recall:  85.86%; F1:   0.88  832
+
+2018-05-11 18:28:35,187 - log/train.log - INFO - new best dev f1 score: 0.850
+2018-05-11 18:28:38,083 - log/train.log - INFO - model saved
+2018-05-11 18:28:38,084 - log/train.log - INFO - evaluate: test
+2018-05-11 18:28:48,691 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7212 phrases; correct: 6356.
+
+2018-05-11 18:28:48,691 - log/train.log - INFO - accuracy:  97.91%; precision:  88.13%; recall:  82.47%; F1:   0.85
+
+2018-05-11 18:28:48,691 - log/train.log - INFO -               LOC: precision:  89.65%; recall:  84.96%; F1:   0.87  3467
+
+2018-05-11 18:28:48,691 - log/train.log - INFO -               ORG: precision:  82.80%; recall:  74.92%; F1:   0.79  1977
+
+2018-05-11 18:28:48,692 - log/train.log - INFO -               PER: precision:  91.12%; recall:  86.43%; F1:   0.89  1768
+
+2018-05-11 18:28:48,750 - log/train.log - INFO - new best test f1 score: 0.850
+2018-05-11 18:28:54,441 - log/train.log - INFO - epoch iteration: 4, step: 68/1044, NER loss:  2.066308
+2018-05-11 18:29:03,026 - log/train.log - INFO - epoch iteration: 4, step: 168/1044, NER loss:  2.022118
+2018-05-11 18:29:11,553 - log/train.log - INFO - epoch iteration: 4, step: 268/1044, NER loss:  2.093435
+2018-05-11 18:29:19,710 - log/train.log - INFO - epoch iteration: 4, step: 368/1044, NER loss:  1.939485
+2018-05-11 18:29:27,061 - log/train.log - INFO - epoch iteration: 4, step: 468/1044, NER loss:  1.671227
+2018-05-11 18:29:34,996 - log/train.log - INFO - epoch iteration: 4, step: 568/1044, NER loss:  1.848004
+2018-05-11 18:29:42,509 - log/train.log - INFO - epoch iteration: 4, step: 668/1044, NER loss:  1.756235
+2018-05-11 18:29:50,570 - log/train.log - INFO - epoch iteration: 4, step: 768/1044, NER loss:  1.758030
+2018-05-11 18:29:58,853 - log/train.log - INFO - epoch iteration: 4, step: 868/1044, NER loss:  1.746997
+2018-05-11 18:30:07,162 - log/train.log - INFO - epoch iteration: 4, step: 968/1044, NER loss:  1.710917
+2018-05-11 18:30:13,339 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:30:18,656 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3768 phrases; correct: 3257.
+
+2018-05-11 18:30:18,656 - log/train.log - INFO - accuracy:  98.08%; precision:  86.44%; recall:  85.28%; F1:   0.86
+
+2018-05-11 18:30:18,656 - log/train.log - INFO -               LOC: precision:  88.91%; recall:  87.13%; F1:   0.88  1912
+
+2018-05-11 18:30:18,656 - log/train.log - INFO -               ORG: precision:  82.91%; recall:  78.86%; F1:   0.81  936
+
+2018-05-11 18:30:18,656 - log/train.log - INFO -               PER: precision:  84.89%; recall:  88.35%; F1:   0.87  920
+
+2018-05-11 18:30:18,716 - log/train.log - INFO - new best dev f1 score: 0.860
+2018-05-11 18:30:20,419 - log/train.log - INFO - model saved
+2018-05-11 18:30:20,420 - log/train.log - INFO - evaluate: test
+2018-05-11 18:30:30,810 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7692 phrases; correct: 6576.
+
+2018-05-11 18:30:30,810 - log/train.log - INFO - accuracy:  97.87%; precision:  85.49%; recall:  85.33%; F1:   0.85
+
+2018-05-11 18:30:30,810 - log/train.log - INFO -               LOC: precision:  87.56%; recall:  86.93%; F1:   0.87  3632
+
+2018-05-11 18:30:30,810 - log/train.log - INFO -               ORG: precision:  80.68%; recall:  78.17%; F1:   0.79  2117
+
+2018-05-11 18:30:30,810 - log/train.log - INFO -               PER: precision:  86.88%; recall:  90.56%; F1:   0.89  1943
+
+2018-05-11 18:30:32,527 - log/train.log - INFO - epoch iteration: 5, step: 24/1044, NER loss:  1.676598
+2018-05-11 18:30:40,219 - log/train.log - INFO - epoch iteration: 5, step: 124/1044, NER loss:  1.308837
+2018-05-11 18:30:48,999 - log/train.log - INFO - epoch iteration: 5, step: 224/1044, NER loss:  1.521610
+2018-05-11 18:30:57,000 - log/train.log - INFO - epoch iteration: 5, step: 324/1044, NER loss:  1.472988
+2018-05-11 18:31:05,815 - log/train.log - INFO - epoch iteration: 5, step: 424/1044, NER loss:  1.599892
+2018-05-11 18:31:14,142 - log/train.log - INFO - epoch iteration: 5, step: 524/1044, NER loss:  1.460533
+2018-05-11 18:31:22,069 - log/train.log - INFO - epoch iteration: 5, step: 624/1044, NER loss:  1.461239
+2018-05-11 18:31:30,996 - log/train.log - INFO - epoch iteration: 5, step: 724/1044, NER loss:  1.675631
+2018-05-11 18:31:38,550 - log/train.log - INFO - epoch iteration: 5, step: 824/1044, NER loss:  1.350587
+2018-05-11 18:31:47,762 - log/train.log - INFO - epoch iteration: 5, step: 924/1044, NER loss:  1.479167
+2018-05-11 18:31:55,809 - log/train.log - INFO - epoch iteration: 5, step: 1024/1044, NER loss:  1.290251
+2018-05-11 18:31:57,277 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:32:02,797 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3692 phrases; correct: 3296.
+
+2018-05-11 18:32:02,797 - log/train.log - INFO - accuracy:  98.24%; precision:  89.27%; recall:  86.31%; F1:   0.88
+
+2018-05-11 18:32:02,797 - log/train.log - INFO -               LOC: precision:  91.20%; recall:  87.65%; F1:   0.89  1875
+
+2018-05-11 18:32:02,797 - log/train.log - INFO -               ORG: precision:  81.73%; recall:  81.81%; F1:   0.82  985
+
+2018-05-11 18:32:02,797 - log/train.log - INFO -               PER: precision:  93.87%; recall:  88.35%; F1:   0.91  832
+
+2018-05-11 18:32:02,861 - log/train.log - INFO - new best dev f1 score: 0.880
+2018-05-11 18:32:05,021 - log/train.log - INFO - model saved
+2018-05-11 18:32:05,022 - log/train.log - INFO - evaluate: test
+2018-05-11 18:32:15,562 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7513 phrases; correct: 6605.
+
+2018-05-11 18:32:15,562 - log/train.log - INFO - accuracy:  98.09%; precision:  87.91%; recall:  85.70%; F1:   0.87
+
+2018-05-11 18:32:15,562 - log/train.log - INFO -               LOC: precision:  90.19%; recall:  87.26%; F1:   0.89  3539
+
+2018-05-11 18:32:15,563 - log/train.log - INFO -               ORG: precision:  80.42%; recall:  80.64%; F1:   0.81  2191
+
+2018-05-11 18:32:15,563 - log/train.log - INFO -               PER: precision:  92.60%; recall:  88.57%; F1:   0.91  1783
+
+2018-05-11 18:32:15,621 - log/train.log - INFO - new best test f1 score: 0.870
+2018-05-11 18:32:21,866 - log/train.log - INFO - epoch iteration: 6, step: 80/1044, NER loss:  1.122918
+2018-05-11 18:32:29,882 - log/train.log - INFO - epoch iteration: 6, step: 180/1044, NER loss:  1.162387
+2018-05-11 18:32:40,037 - log/train.log - INFO - epoch iteration: 6, step: 280/1044, NER loss:  1.151520
+2018-05-11 18:32:52,099 - log/train.log - INFO - epoch iteration: 6, step: 380/1044, NER loss:  1.176002
+2018-05-11 18:33:00,791 - log/train.log - INFO - epoch iteration: 6, step: 480/1044, NER loss:  1.284114
+2018-05-11 18:33:11,330 - log/train.log - INFO - epoch iteration: 6, step: 580/1044, NER loss:  1.363145
+2018-05-11 18:33:20,903 - log/train.log - INFO - epoch iteration: 6, step: 680/1044, NER loss:  1.212127
+2018-05-11 18:33:29,076 - log/train.log - INFO - epoch iteration: 6, step: 780/1044, NER loss:  1.137381
+2018-05-11 18:33:37,381 - log/train.log - INFO - epoch iteration: 6, step: 880/1044, NER loss:  1.162699
+2018-05-11 18:33:47,013 - log/train.log - INFO - epoch iteration: 6, step: 980/1044, NER loss:  1.159261
+2018-05-11 18:33:53,043 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:33:58,528 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3861 phrases; correct: 3381.
+
+2018-05-11 18:33:58,528 - log/train.log - INFO - accuracy:  98.30%; precision:  87.57%; recall:  88.53%; F1:   0.88
+
+2018-05-11 18:33:58,528 - log/train.log - INFO -               LOC: precision:  90.32%; recall:  89.90%; F1:   0.90  1942
+
+2018-05-11 18:33:58,528 - log/train.log - INFO -               ORG: precision:  80.39%; recall:  84.15%; F1:   0.82  1030
+
+2018-05-11 18:33:58,529 - log/train.log - INFO -               PER: precision:  89.88%; recall:  90.38%; F1:   0.90  889
+
+2018-05-11 18:33:58,599 - log/train.log - INFO - new best dev f1 score: 0.880
+2018-05-11 18:34:00,991 - log/train.log - INFO - model saved
+2018-05-11 18:34:00,991 - log/train.log - INFO - evaluate: test
+2018-05-11 18:34:12,473 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7810 phrases; correct: 6770.
+
+2018-05-11 18:34:12,473 - log/train.log - INFO - accuracy:  98.09%; precision:  86.68%; recall:  87.84%; F1:   0.87
+
+2018-05-11 18:34:12,473 - log/train.log - INFO -               LOC: precision:  89.83%; recall:  89.09%; F1:   0.89  3628
+
+2018-05-11 18:34:12,473 - log/train.log - INFO -               ORG: precision:  78.08%; recall:  83.16%; F1:   0.81  2327
+
+2018-05-11 18:34:12,473 - log/train.log - INFO -               PER: precision:  91.32%; recall:  90.88%; F1:   0.91  1855
+
+2018-05-11 18:34:15,509 - log/train.log - INFO - epoch iteration: 7, step: 36/1044, NER loss:  1.070182
+2018-05-11 18:34:23,981 - log/train.log - INFO - epoch iteration: 7, step: 136/1044, NER loss:  0.937468
+2018-05-11 18:34:38,074 - log/train.log - INFO - epoch iteration: 7, step: 236/1044, NER loss:  1.143127
+2018-05-11 18:34:49,067 - log/train.log - INFO - epoch iteration: 7, step: 336/1044, NER loss:  1.149329
+2018-05-11 18:34:58,111 - log/train.log - INFO - epoch iteration: 7, step: 436/1044, NER loss:  0.853927
+2018-05-11 18:35:06,528 - log/train.log - INFO - epoch iteration: 7, step: 536/1044, NER loss:  0.858325
+2018-05-11 18:35:15,096 - log/train.log - INFO - epoch iteration: 7, step: 636/1044, NER loss:  1.057473
+2018-05-11 18:35:24,413 - log/train.log - INFO - epoch iteration: 7, step: 736/1044, NER loss:  0.963917
+2018-05-11 18:35:33,441 - log/train.log - INFO - epoch iteration: 7, step: 836/1044, NER loss:  0.921755
+2018-05-11 18:35:43,775 - log/train.log - INFO - epoch iteration: 7, step: 936/1044, NER loss:  1.055326
+2018-05-11 18:35:51,575 - log/train.log - INFO - epoch iteration: 7, step: 1036/1044, NER loss:  0.799164
+2018-05-11 18:35:52,276 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:35:58,008 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3753 phrases; correct: 3343.
+
+2018-05-11 18:35:58,008 - log/train.log - INFO - accuracy:  98.40%; precision:  89.08%; recall:  87.54%; F1:   0.88
+
+2018-05-11 18:35:58,008 - log/train.log - INFO -               LOC: precision:  89.97%; recall:  89.65%; F1:   0.90  1944
+
+2018-05-11 18:35:58,008 - log/train.log - INFO -               ORG: precision:  83.73%; recall:  81.61%; F1:   0.83  959
+
+2018-05-11 18:35:58,008 - log/train.log - INFO -               PER: precision:  93.06%; recall:  89.48%; F1:   0.91  850
+
+2018-05-11 18:35:58,085 - log/train.log - INFO - new best dev f1 score: 0.880
+2018-05-11 18:35:59,910 - log/train.log - INFO - model saved
+2018-05-11 18:35:59,910 - log/train.log - INFO - evaluate: test
+2018-05-11 18:36:11,320 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7610 phrases; correct: 6715.
+
+2018-05-11 18:36:11,320 - log/train.log - INFO - accuracy:  98.19%; precision:  88.24%; recall:  87.13%; F1:   0.88
+
+2018-05-11 18:36:11,320 - log/train.log - INFO -               LOC: precision:  89.27%; recall:  88.93%; F1:   0.89  3644
+
+2018-05-11 18:36:11,320 - log/train.log - INFO -               ORG: precision:  82.10%; recall:  80.82%; F1:   0.81  2151
+
+2018-05-11 18:36:11,320 - log/train.log - INFO -               PER: precision:  93.44%; recall:  90.99%; F1:   0.92  1815
+
+2018-05-11 18:36:11,382 - log/train.log - INFO - new best test f1 score: 0.880
+2018-05-11 18:36:20,518 - log/train.log - INFO - epoch iteration: 8, step: 92/1044, NER loss:  0.967763
+2018-05-11 18:36:28,611 - log/train.log - INFO - epoch iteration: 8, step: 192/1044, NER loss:  0.772456
+2018-05-11 18:36:38,878 - log/train.log - INFO - epoch iteration: 8, step: 292/1044, NER loss:  0.760034
+2018-05-11 18:36:48,306 - log/train.log - INFO - epoch iteration: 8, step: 392/1044, NER loss:  0.878249
+2018-05-11 18:36:58,433 - log/train.log - INFO - epoch iteration: 8, step: 492/1044, NER loss:  0.888387
+2018-05-11 18:37:09,018 - log/train.log - INFO - epoch iteration: 8, step: 592/1044, NER loss:  0.928382
+2018-05-11 18:37:18,160 - log/train.log - INFO - epoch iteration: 8, step: 692/1044, NER loss:  0.906186
+2018-05-11 18:37:26,670 - log/train.log - INFO - epoch iteration: 8, step: 792/1044, NER loss:  0.871450
+2018-05-11 18:37:34,510 - log/train.log - INFO - epoch iteration: 8, step: 892/1044, NER loss:  0.869272
+2018-05-11 18:37:42,147 - log/train.log - INFO - epoch iteration: 8, step: 992/1044, NER loss:  0.803148
+2018-05-11 18:37:46,403 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:37:52,274 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3778 phrases; correct: 3389.
+
+2018-05-11 18:37:52,274 - log/train.log - INFO - accuracy:  98.49%; precision:  89.70%; recall:  88.74%; F1:   0.89
+
+2018-05-11 18:37:52,274 - log/train.log - INFO -               LOC: precision:  90.41%; recall:  90.83%; F1:   0.91  1960
+
+2018-05-11 18:37:52,274 - log/train.log - INFO -               ORG: precision:  85.01%; recall:  83.54%; F1:   0.84  967
+
+2018-05-11 18:37:52,274 - log/train.log - INFO -               PER: precision:  93.42%; recall:  89.93%; F1:   0.92  851
+
+2018-05-11 18:37:52,341 - log/train.log - INFO - new best dev f1 score: 0.890
+2018-05-11 18:37:54,802 - log/train.log - INFO - model saved
+2018-05-11 18:37:54,802 - log/train.log - INFO - evaluate: test
+2018-05-11 18:38:05,554 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7664 phrases; correct: 6795.
+
+2018-05-11 18:38:05,554 - log/train.log - INFO - accuracy:  98.26%; precision:  88.66%; recall:  88.17%; F1:   0.88
+
+2018-05-11 18:38:05,554 - log/train.log - INFO -               LOC: precision:  89.63%; recall:  90.54%; F1:   0.90  3695
+
+2018-05-11 18:38:05,554 - log/train.log - INFO -               ORG: precision:  82.71%; recall:  81.65%; F1:   0.82  2157
+
+2018-05-11 18:38:05,554 - log/train.log - INFO -               PER: precision:  93.76%; recall:  91.15%; F1:   0.92  1812
+
+2018-05-11 18:38:05,622 - log/train.log - INFO - new best test f1 score: 0.880
+2018-05-11 18:38:10,152 - log/train.log - INFO - epoch iteration: 9, step: 48/1044, NER loss:  0.758554
+2018-05-11 18:38:18,936 - log/train.log - INFO - epoch iteration: 9, step: 148/1044, NER loss:  0.829185
+2018-05-11 18:38:26,890 - log/train.log - INFO - epoch iteration: 9, step: 248/1044, NER loss:  0.660099
+2018-05-11 18:38:35,228 - log/train.log - INFO - epoch iteration: 9, step: 348/1044, NER loss:  0.778555
+2018-05-11 18:38:43,519 - log/train.log - INFO - epoch iteration: 9, step: 448/1044, NER loss:  0.750586
+2018-05-11 18:38:52,726 - log/train.log - INFO - epoch iteration: 9, step: 548/1044, NER loss:  0.745194
+2018-05-11 18:39:01,452 - log/train.log - INFO - epoch iteration: 9, step: 648/1044, NER loss:  0.719315
+2018-05-11 18:39:10,657 - log/train.log - INFO - epoch iteration: 9, step: 748/1044, NER loss:  0.777470
+2018-05-11 18:39:19,634 - log/train.log - INFO - epoch iteration: 9, step: 848/1044, NER loss:  0.803279
+2018-05-11 18:39:28,066 - log/train.log - INFO - epoch iteration: 9, step: 948/1044, NER loss:  0.684411
+2018-05-11 18:39:36,106 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:39:41,973 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3707 phrases; correct: 3371.
+
+2018-05-11 18:39:41,973 - log/train.log - INFO - accuracy:  98.53%; precision:  90.94%; recall:  88.27%; F1:   0.90
+
+2018-05-11 18:39:41,973 - log/train.log - INFO -               LOC: precision:  92.64%; recall:  90.36%; F1:   0.91  1903
+
+2018-05-11 18:39:41,973 - log/train.log - INFO -               ORG: precision:  87.69%; recall:  81.81%; F1:   0.85  918
+
+2018-05-11 18:39:41,973 - log/train.log - INFO -               PER: precision:  90.63%; recall:  90.84%; F1:   0.91  886
+
+2018-05-11 18:39:42,040 - log/train.log - INFO - new best dev f1 score: 0.900
+2018-05-11 18:39:44,144 - log/train.log - INFO - model saved
+2018-05-11 18:39:44,144 - log/train.log - INFO - evaluate: test
+2018-05-11 18:39:55,223 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7490 phrases; correct: 6761.
+
+2018-05-11 18:39:55,223 - log/train.log - INFO - accuracy:  98.37%; precision:  90.27%; recall:  87.73%; F1:   0.89
+
+2018-05-11 18:39:55,223 - log/train.log - INFO -               LOC: precision:  91.29%; recall:  90.30%; F1:   0.91  3618
+
+2018-05-11 18:39:55,223 - log/train.log - INFO -               ORG: precision:  87.00%; recall:  79.91%; F1:   0.83  2007
+
+2018-05-11 18:39:55,223 - log/train.log - INFO -               PER: precision:  91.80%; recall:  91.85%; F1:   0.92  1865
+
+2018-05-11 18:39:55,290 - log/train.log - INFO - new best test f1 score: 0.890
+2018-05-11 18:39:55,540 - log/train.log - INFO - epoch iteration: 10, step: 4/1044, NER loss:  0.712002
+2018-05-11 18:40:04,470 - log/train.log - INFO - epoch iteration: 10, step: 104/1044, NER loss:  0.609935
+2018-05-11 18:40:13,411 - log/train.log - INFO - epoch iteration: 10, step: 204/1044, NER loss:  0.645362
+2018-05-11 18:40:22,121 - log/train.log - INFO - epoch iteration: 10, step: 304/1044, NER loss:  0.615587
+2018-05-11 18:40:29,877 - log/train.log - INFO - epoch iteration: 10, step: 404/1044, NER loss:  0.665840
+2018-05-11 18:40:38,479 - log/train.log - INFO - epoch iteration: 10, step: 504/1044, NER loss:  0.674656
+2018-05-11 18:40:48,290 - log/train.log - INFO - epoch iteration: 10, step: 604/1044, NER loss:  0.578249
+2018-05-11 18:40:57,390 - log/train.log - INFO - epoch iteration: 10, step: 704/1044, NER loss:  0.611216
+2018-05-11 18:41:06,057 - log/train.log - INFO - epoch iteration: 10, step: 804/1044, NER loss:  0.665634
+2018-05-11 18:41:14,795 - log/train.log - INFO - epoch iteration: 10, step: 904/1044, NER loss:  0.705414
+2018-05-11 18:41:24,082 - log/train.log - INFO - epoch iteration: 10, step: 1004/1044, NER loss:  0.731772
+2018-05-11 18:41:28,015 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:41:33,543 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3849 phrases; correct: 3412.
+
+2018-05-11 18:41:33,543 - log/train.log - INFO - accuracy:  98.52%; precision:  88.65%; recall:  89.34%; F1:   0.89
+
+2018-05-11 18:41:33,543 - log/train.log - INFO -               LOC: precision:  86.93%; recall:  93.03%; F1:   0.90  2088
+
+2018-05-11 18:41:33,543 - log/train.log - INFO -               ORG: precision:  87.79%; recall:  81.81%; F1:   0.85  917
+
+2018-05-11 18:41:33,543 - log/train.log - INFO -               PER: precision:  93.84%; recall:  89.59%; F1:   0.92  844
+
+2018-05-11 18:41:33,545 - log/train.log - INFO - evaluate: test
+2018-05-11 18:41:45,498 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7832 phrases; correct: 6868.
+
+2018-05-11 18:41:45,498 - log/train.log - INFO - accuracy:  98.27%; precision:  87.69%; recall:  89.11%; F1:   0.88
+
+2018-05-11 18:41:45,498 - log/train.log - INFO -               LOC: precision:  86.24%; recall:  93.22%; F1:   0.90  3954
+
+2018-05-11 18:41:45,498 - log/train.log - INFO -               ORG: precision:  85.13%; recall:  80.46%; F1:   0.83  2065
+
+2018-05-11 18:41:45,498 - log/train.log - INFO -               PER: precision:  93.77%; recall:  91.20%; F1:   0.92  1813
+
+2018-05-11 18:41:50,431 - log/train.log - INFO - epoch iteration: 11, step: 60/1044, NER loss:  0.615462
+2018-05-11 18:42:00,608 - log/train.log - INFO - epoch iteration: 11, step: 160/1044, NER loss:  0.600976
+2018-05-11 18:42:09,387 - log/train.log - INFO - epoch iteration: 11, step: 260/1044, NER loss:  0.577989
+2018-05-11 18:42:19,251 - log/train.log - INFO - epoch iteration: 11, step: 360/1044, NER loss:  0.612938
+2018-05-11 18:42:28,080 - log/train.log - INFO - epoch iteration: 11, step: 460/1044, NER loss:  0.557681
+2018-05-11 18:42:36,906 - log/train.log - INFO - epoch iteration: 11, step: 560/1044, NER loss:  0.580457
+2018-05-11 18:42:45,337 - log/train.log - INFO - epoch iteration: 11, step: 660/1044, NER loss:  0.646800
+2018-05-11 18:42:52,960 - log/train.log - INFO - epoch iteration: 11, step: 760/1044, NER loss:  0.622492
+2018-05-11 18:43:01,417 - log/train.log - INFO - epoch iteration: 11, step: 860/1044, NER loss:  0.650413
+2018-05-11 18:43:09,899 - log/train.log - INFO - epoch iteration: 11, step: 960/1044, NER loss:  0.519349
+2018-05-11 18:43:18,254 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:43:24,095 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3876 phrases; correct: 3418.
+
+2018-05-11 18:43:24,095 - log/train.log - INFO - accuracy:  98.43%; precision:  88.18%; recall:  89.50%; F1:   0.89
+
+2018-05-11 18:43:24,095 - log/train.log - INFO -               LOC: precision:  88.22%; recall:  91.75%; F1:   0.90  2029
+
+2018-05-11 18:43:24,095 - log/train.log - INFO -               ORG: precision:  83.40%; recall:  85.26%; F1:   0.84  1006
+
+2018-05-11 18:43:24,096 - log/train.log - INFO -               PER: precision:  93.82%; recall:  89.25%; F1:   0.91  841
+
+2018-05-11 18:43:24,097 - log/train.log - INFO - evaluate: test
+2018-05-11 18:43:35,333 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7885 phrases; correct: 6920.
+
+2018-05-11 18:43:35,333 - log/train.log - INFO - accuracy:  98.25%; precision:  87.76%; recall:  89.79%; F1:   0.89
+
+2018-05-11 18:43:35,333 - log/train.log - INFO -               LOC: precision:  87.93%; recall:  92.37%; F1:   0.90  3843
+
+2018-05-11 18:43:35,333 - log/train.log - INFO -               ORG: precision:  81.48%; recall:  84.35%; F1:   0.83  2262
+
+2018-05-11 18:43:35,333 - log/train.log - INFO -               PER: precision:  95.39%; recall:  91.09%; F1:   0.93  1780
+
+2018-05-11 18:43:35,408 - log/train.log - INFO - new best test f1 score: 0.890
+2018-05-11 18:43:37,120 - log/train.log - INFO - epoch iteration: 12, step: 16/1044, NER loss:  0.636473
+2018-05-11 18:43:45,614 - log/train.log - INFO - epoch iteration: 12, step: 116/1044, NER loss:  0.443590
+2018-05-11 18:43:54,985 - log/train.log - INFO - epoch iteration: 12, step: 216/1044, NER loss:  0.568238
+2018-05-11 18:44:03,031 - log/train.log - INFO - epoch iteration: 12, step: 316/1044, NER loss:  0.517793
+2018-05-11 18:44:11,201 - log/train.log - INFO - epoch iteration: 12, step: 416/1044, NER loss:  0.536403
+2018-05-11 18:44:19,453 - log/train.log - INFO - epoch iteration: 12, step: 516/1044, NER loss:  0.573733
+2018-05-11 18:44:27,489 - log/train.log - INFO - epoch iteration: 12, step: 616/1044, NER loss:  0.539158
+2018-05-11 18:44:35,537 - log/train.log - INFO - epoch iteration: 12, step: 716/1044, NER loss:  0.458114
+2018-05-11 18:44:43,246 - log/train.log - INFO - epoch iteration: 12, step: 816/1044, NER loss:  0.504312
+2018-05-11 18:44:51,699 - log/train.log - INFO - epoch iteration: 12, step: 916/1044, NER loss:  0.566921
+2018-05-11 18:44:59,220 - log/train.log - INFO - epoch iteration: 12, step: 1016/1044, NER loss:  0.588167
+2018-05-11 18:45:01,291 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:45:06,576 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3789 phrases; correct: 3431.
+
+2018-05-11 18:45:06,576 - log/train.log - INFO - accuracy:  98.62%; precision:  90.55%; recall:  89.84%; F1:   0.90
+
+2018-05-11 18:45:06,576 - log/train.log - INFO -               LOC: precision:  92.62%; recall:  91.39%; F1:   0.92  1925
+
+2018-05-11 18:45:06,576 - log/train.log - INFO -               ORG: precision:  84.69%; recall:  86.59%; F1:   0.86  1006
+
+2018-05-11 18:45:06,576 - log/train.log - INFO -               PER: precision:  92.77%; recall:  90.05%; F1:   0.91  858
+
+2018-05-11 18:45:06,637 - log/train.log - INFO - new best dev f1 score: 0.900
+2018-05-11 18:45:08,330 - log/train.log - INFO - model saved
+2018-05-11 18:45:08,330 - log/train.log - INFO - evaluate: test
+2018-05-11 18:45:18,689 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7727 phrases; correct: 6899.
+
+2018-05-11 18:45:18,689 - log/train.log - INFO - accuracy:  98.36%; precision:  89.28%; recall:  89.52%; F1:   0.89
+
+2018-05-11 18:45:18,689 - log/train.log - INFO -               LOC: precision:  91.22%; recall:  91.74%; F1:   0.91  3679
+
+2018-05-11 18:45:18,689 - log/train.log - INFO -               ORG: precision:  82.54%; recall:  83.71%; F1:   0.83  2216
+
+2018-05-11 18:45:18,689 - log/train.log - INFO -               PER: precision:  93.56%; recall:  91.95%; F1:   0.93  1832
+
+2018-05-11 18:45:18,750 - log/train.log - INFO - new best test f1 score: 0.890
+2018-05-11 18:45:24,236 - log/train.log - INFO - epoch iteration: 13, step: 72/1044, NER loss:  0.463826
+2018-05-11 18:45:32,263 - log/train.log - INFO - epoch iteration: 13, step: 172/1044, NER loss:  0.456504
+2018-05-11 18:45:40,583 - log/train.log - INFO - epoch iteration: 13, step: 272/1044, NER loss:  0.475742
+2018-05-11 18:45:49,463 - log/train.log - INFO - epoch iteration: 13, step: 372/1044, NER loss:  0.451980
+2018-05-11 18:45:58,139 - log/train.log - INFO - epoch iteration: 13, step: 472/1044, NER loss:  0.503858
+2018-05-11 18:46:07,511 - log/train.log - INFO - epoch iteration: 13, step: 572/1044, NER loss:  0.512023
+2018-05-11 18:46:17,337 - log/train.log - INFO - epoch iteration: 13, step: 672/1044, NER loss:  0.523860
+2018-05-11 18:46:26,628 - log/train.log - INFO - epoch iteration: 13, step: 772/1044, NER loss:  0.602117
+2018-05-11 18:46:35,273 - log/train.log - INFO - epoch iteration: 13, step: 872/1044, NER loss:  0.476355
+2018-05-11 18:46:43,508 - log/train.log - INFO - epoch iteration: 13, step: 972/1044, NER loss:  0.510167
+2018-05-11 18:46:49,814 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:46:55,900 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3741 phrases; correct: 3411.
+
+2018-05-11 18:46:55,900 - log/train.log - INFO - accuracy:  98.67%; precision:  91.18%; recall:  89.32%; F1:   0.90
+
+2018-05-11 18:46:55,900 - log/train.log - INFO -               LOC: precision:  92.34%; recall:  91.44%; F1:   0.92  1932
+
+2018-05-11 18:46:55,900 - log/train.log - INFO -               ORG: precision:  87.65%; recall:  84.35%; F1:   0.86  947
+
+2018-05-11 18:46:55,900 - log/train.log - INFO -               PER: precision:  92.46%; recall:  90.16%; F1:   0.91  862
+
+2018-05-11 18:46:55,964 - log/train.log - INFO - new best dev f1 score: 0.900
+2018-05-11 18:46:58,178 - log/train.log - INFO - model saved
+2018-05-11 18:46:58,178 - log/train.log - INFO - evaluate: test
+2018-05-11 18:47:09,120 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7589 phrases; correct: 6887.
+
+2018-05-11 18:47:09,120 - log/train.log - INFO - accuracy:  98.54%; precision:  90.75%; recall:  89.36%; F1:   0.90
+
+2018-05-11 18:47:09,120 - log/train.log - INFO -               LOC: precision:  91.14%; recall:  91.96%; F1:   0.92  3691
+
+2018-05-11 18:47:09,120 - log/train.log - INFO -               ORG: precision:  87.04%; recall:  82.65%; F1:   0.85  2075
+
+2018-05-11 18:47:09,120 - log/train.log - INFO -               PER: precision:  94.19%; recall:  92.11%; F1:   0.93  1823
+
+2018-05-11 18:47:09,181 - log/train.log - INFO - new best test f1 score: 0.900
+2018-05-11 18:47:11,336 - log/train.log - INFO - epoch iteration: 14, step: 28/1044, NER loss:  0.508649
+2018-05-11 18:47:20,938 - log/train.log - INFO - epoch iteration: 14, step: 128/1044, NER loss:  0.412837
+2018-05-11 18:47:28,983 - log/train.log - INFO - epoch iteration: 14, step: 228/1044, NER loss:  0.383092
+2018-05-11 18:47:38,696 - log/train.log - INFO - epoch iteration: 14, step: 328/1044, NER loss:  0.494344
+2018-05-11 18:47:49,043 - log/train.log - INFO - epoch iteration: 14, step: 428/1044, NER loss:  0.449813
+2018-05-11 18:47:57,564 - log/train.log - INFO - epoch iteration: 14, step: 528/1044, NER loss:  0.406838
+2018-05-11 18:48:06,198 - log/train.log - INFO - epoch iteration: 14, step: 628/1044, NER loss:  0.429881
+2018-05-11 18:48:14,527 - log/train.log - INFO - epoch iteration: 14, step: 728/1044, NER loss:  0.491994
+2018-05-11 18:48:22,907 - log/train.log - INFO - epoch iteration: 14, step: 828/1044, NER loss:  0.439410
+2018-05-11 18:48:31,658 - log/train.log - INFO - epoch iteration: 14, step: 928/1044, NER loss:  0.550609
+2018-05-11 18:48:40,434 - log/train.log - INFO - epoch iteration: 14, step: 1028/1044, NER loss:  0.536616
+2018-05-11 18:48:41,630 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:48:47,174 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3792 phrases; correct: 3421.
+
+2018-05-11 18:48:47,174 - log/train.log - INFO - accuracy:  98.63%; precision:  90.22%; recall:  89.58%; F1:   0.90
+
+2018-05-11 18:48:47,174 - log/train.log - INFO -               LOC: precision:  90.92%; recall:  91.39%; F1:   0.91  1961
+
+2018-05-11 18:48:47,174 - log/train.log - INFO -               ORG: precision:  86.15%; recall:  85.98%; F1:   0.86  982
+
+2018-05-11 18:48:47,174 - log/train.log - INFO -               PER: precision:  93.29%; recall:  89.59%; F1:   0.91  849
+
+2018-05-11 18:48:47,235 - log/train.log - INFO - new best dev f1 score: 0.900
+2018-05-11 18:48:49,398 - log/train.log - INFO - model saved
+2018-05-11 18:48:49,399 - log/train.log - INFO - evaluate: test
+2018-05-11 18:49:00,310 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7680 phrases; correct: 6893.
+
+2018-05-11 18:49:00,311 - log/train.log - INFO - accuracy:  98.42%; precision:  89.75%; recall:  89.44%; F1:   0.90
+
+2018-05-11 18:49:00,311 - log/train.log - INFO -               LOC: precision:  90.78%; recall:  91.74%; F1:   0.91  3697
+
+2018-05-11 18:49:00,311 - log/train.log - INFO -               ORG: precision:  84.16%; recall:  83.43%; F1:   0.84  2166
+
+2018-05-11 18:49:00,311 - log/train.log - INFO -               PER: precision:  94.33%; recall:  91.95%; F1:   0.93  1817
+
+2018-05-11 18:49:00,373 - log/train.log - INFO - new best test f1 score: 0.900
+2018-05-11 18:49:07,735 - log/train.log - INFO - epoch iteration: 15, step: 84/1044, NER loss:  0.394364
+2018-05-11 18:49:16,217 - log/train.log - INFO - epoch iteration: 15, step: 184/1044, NER loss:  0.357408
+2018-05-11 18:49:24,716 - log/train.log - INFO - epoch iteration: 15, step: 284/1044, NER loss:  0.397984
+2018-05-11 18:49:32,671 - log/train.log - INFO - epoch iteration: 15, step: 384/1044, NER loss:  0.383977
+2018-05-11 18:49:40,687 - log/train.log - INFO - epoch iteration: 15, step: 484/1044, NER loss:  0.377870
+2018-05-11 18:49:50,319 - log/train.log - INFO - epoch iteration: 15, step: 584/1044, NER loss:  0.403854
+2018-05-11 18:50:00,368 - log/train.log - INFO - epoch iteration: 15, step: 684/1044, NER loss:  0.453237
+2018-05-11 18:50:09,520 - log/train.log - INFO - epoch iteration: 15, step: 784/1044, NER loss:  0.453155
+2018-05-11 18:50:18,057 - log/train.log - INFO - epoch iteration: 15, step: 884/1044, NER loss:  0.436927
+2018-05-11 18:50:31,475 - log/train.log - INFO - epoch iteration: 15, step: 984/1044, NER loss:  0.535003
+2018-05-11 18:50:36,719 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:50:42,578 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3820 phrases; correct: 3434.
+
+2018-05-11 18:50:42,578 - log/train.log - INFO - accuracy:  98.54%; precision:  89.90%; recall:  89.92%; F1:   0.90
+
+2018-05-11 18:50:42,578 - log/train.log - INFO -               LOC: precision:  89.23%; recall:  92.57%; F1:   0.91  2024
+
+2018-05-11 18:50:42,578 - log/train.log - INFO -               ORG: precision:  88.98%; recall:  83.74%; F1:   0.86  926
+
+2018-05-11 18:50:42,578 - log/train.log - INFO -               PER: precision:  92.41%; recall:  90.95%; F1:   0.92  870
+
+2018-05-11 18:50:42,641 - log/train.log - INFO - new best dev f1 score: 0.900
+2018-05-11 18:50:44,875 - log/train.log - INFO - model saved
+2018-05-11 18:50:44,876 - log/train.log - INFO - evaluate: test
+2018-05-11 18:50:56,018 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7707 phrases; correct: 6928.
+
+2018-05-11 18:50:56,018 - log/train.log - INFO - accuracy:  98.50%; precision:  89.89%; recall:  89.89%; F1:   0.90
+
+2018-05-11 18:50:56,018 - log/train.log - INFO -               LOC: precision:  89.51%; recall:  93.11%; F1:   0.91  3805
+
+2018-05-11 18:50:56,018 - log/train.log - INFO -               ORG: precision:  87.77%; recall:  81.78%; F1:   0.85  2036
+
+2018-05-11 18:50:56,018 - log/train.log - INFO -               PER: precision:  92.98%; recall:  93.08%; F1:   0.93  1866
+
+2018-05-11 18:50:56,081 - log/train.log - INFO - new best test f1 score: 0.900
+2018-05-11 18:50:59,719 - log/train.log - INFO - epoch iteration: 16, step: 40/1044, NER loss:  0.418794
+2018-05-11 18:51:07,924 - log/train.log - INFO - epoch iteration: 16, step: 140/1044, NER loss:  0.363885
+2018-05-11 18:51:17,971 - log/train.log - INFO - epoch iteration: 16, step: 240/1044, NER loss:  0.369229
+2018-05-11 18:51:27,607 - log/train.log - INFO - epoch iteration: 16, step: 340/1044, NER loss:  0.467525
+2018-05-11 18:51:36,097 - log/train.log - INFO - epoch iteration: 16, step: 440/1044, NER loss:  0.356271
+2018-05-11 18:51:43,753 - log/train.log - INFO - epoch iteration: 16, step: 540/1044, NER loss:  0.340259
+2018-05-11 18:51:51,942 - log/train.log - INFO - epoch iteration: 16, step: 640/1044, NER loss:  0.411928
+2018-05-11 18:52:01,520 - log/train.log - INFO - epoch iteration: 16, step: 740/1044, NER loss:  0.402869
+2018-05-11 18:52:11,159 - log/train.log - INFO - epoch iteration: 16, step: 840/1044, NER loss:  0.373857
+2018-05-11 18:52:19,989 - log/train.log - INFO - epoch iteration: 16, step: 940/1044, NER loss:  0.453146
+2018-05-11 18:52:29,100 - log/train.log - INFO - epoch iteration: 16, step: 1040/1044, NER loss:  0.453375
+2018-05-11 18:52:29,424 - log/train.log - INFO - evaluate: dev
+2018-05-11 18:52:35,146 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3816 phrases; correct: 3433.
+
+2018-05-11 18:52:35,146 - log/train.log - INFO - accuracy:  98.58%; precision:  89.96%; recall:  89.89%; F1:   0.90
+
+2018-05-11 18:52:35,146 - log/train.log - INFO -               LOC: precision:  91.71%; recall:  90.77%; F1:   0.91  1931
+
+2018-05-11 18:52:35,146 - log/train.log - INFO -               ORG: precision:  85.40%; recall:  86.79%; F1:   0.86  1000
+
+2018-05-11 18:52:35,146 - log/train.log - INFO -               PER: precision:  91.30%; recall:  91.40%; F1:   0.91  885
+
+2018-05-11 18:52:35,210 - log/train.log - INFO - new best dev f1 score: 0.900
+2018-05-11 18:52:37,096 - log/train.log - INFO - model saved
+2018-05-11 18:52:37,096 - log/train.log - INFO - evaluate: test
+2018-05-11 18:52:48,631 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7759 phrases; correct: 6963.
+
+2018-05-11 18:52:48,631 - log/train.log - INFO - accuracy:  98.49%; precision:  89.74%; recall:  90.35%; F1:   0.90
+
+2018-05-11 18:52:48,631 - log/train.log - INFO -               LOC: precision:  92.32%; recall:  91.72%; F1:   0.92  3634
+
+2018-05-11 18:52:48,631 - log/train.log - INFO -               ORG: precision:  83.33%; recall:  85.77%; F1:   0.85  2249
+
+2018-05-11 18:52:48,631 - log/train.log - INFO -               PER: precision:  92.43%; recall:  93.03%; F1:   0.93  1876
+
+2018-05-11 18:52:48,697 - log/train.log - INFO - new best test f1 score: 0.900
+2018-05-11 18:52:57,450 - log/train.log - INFO - epoch iteration: 17, step: 96/1044, NER loss:  0.318356
